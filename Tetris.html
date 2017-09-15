@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css" id="css"></style>
+</head>
+<body onkeyup="keyUp(event);" onkeydown="keyDown(event);">
+<div id="game">
+<div id="title"></div>
+<canvas id="tetris"></canvas>
+<canvas id="tetrisBackground"></canvas>
+<div id="nextWord">NEXT:</div>
+<canvas id="next"></canvas>
+<div id="points">Points: 0</div>
+<div id="lines">Lines: 0</div>
+<div id="figures">Figures: 0</div>
+<div id="record">Record: 0</div>
+<div id="restart" onclick="onclickRestart();">RESTART(<span>R</span>)</div>
+<div id="points2" onmousemove="Title(pointsDIV);" onmouseout="titleDIV.style.display = 'none';"></div>
+<div id="lines2" onmousemove="Title(linesDIV);" onmouseout="titleDIV.style.display = 'none';"></div>
+<div id="figures2" onmousemove="Title(figuresDIV);" onmouseout="titleDIV.style.display = 'none';"></div>
+<div id="record2" onmousemove="Title(recordDIV);" onmouseout="titleDIV.style.display = 'none';"></div>
+<div id="pause">PRESS <span>SPACE</span> TO START</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
